@@ -16,8 +16,8 @@ static DeviceTouch touchCfg() {
     // The XPT2046 reports landscape (rotation 1) coordinates
     // rotation:        0      1      2      3
     const bool swapXY[4] = {true, false, true, false};
-    const bool mirrorX[4] = {true, false, false, true};
-    const bool mirrorY[4] = {false, false, true, true};
+    const bool mirrorX[4] = {false, false, true, true};
+    const bool mirrorY[4] = {true, false, false, true};
     for (int i = 0; i < 4; i++) {
         cfg.SwapXY[i] = swapXY[i];
         cfg.MirrorX[i] = mirrorX[i];
